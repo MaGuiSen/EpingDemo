@@ -7,6 +7,6 @@ import {
   Navigator,
   AppRegistry,
 } from 'react-native';
-import Root from './app/js/root';
+import Root from './app/js/view/root';
 
 AppRegistry.registerComponent('Demo2', () => Root);

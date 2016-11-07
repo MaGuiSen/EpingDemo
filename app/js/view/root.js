@@ -12,7 +12,7 @@ import {
   BackAndroid,
   Platform
 } from 'react-native';
-import Toast from './util/toast';
+import Toast from '../util/toast';
 import Start from './start';
 
 let lastClickTime = 0;

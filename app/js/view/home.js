@@ -7,7 +7,7 @@ import {
     StyleSheet,
     Image
     } from 'react-native';
-import ScreenUtil from './util/ScreenUtil';
+import ScreenUtil from './../util/ScreenUtil';
 
 var styles = StyleSheet.create({
     banner: {
@@ -20,7 +20,7 @@ var styles = StyleSheet.create({
 class Home extends React.Component {
     render() {
         return (
-            <Image source={require('./../res/image/app_logo_start.png')} style={styles.banner}/>
+            <Image source={require('./../../res/image/app_logo_start.png')} style={styles.banner}/>
         );
     }
 }

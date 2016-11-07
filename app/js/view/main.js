@@ -8,6 +8,7 @@ import {
 } from 'react-native';
 import ScrollableTabView from 'react-native-scrollable-tab-view';
 import Home from './home';
+import Mine from './user/mine';
 import TabBar from './tabBar';
 
 const styles = StyleSheet.create({
@@ -23,9 +24,9 @@ const styles = StyleSheet.create({
 
 //tabbar图片资源
 const TAB_BAR_RESOURCES = [
-    [require('../res/image/home.png'), require('../res/image/home_active.png')],
-    [require('../res/image/home.png'), require('../res/image/home_active.png')],
-    [require('../res/image/home.png'), require('../res/image/home_active.png')],
+    [require('../../res/image/home.png'), require('../../res/image/home_active.png')],
+    [require('../../res/image/home.png'), require('../../res/image/home_active.png')],
+    [require('../../res/image/home.png'), require('../../res/image/home_active.png')],
 ];
 
 class Main extends React.Component {
@@ -45,9 +46,9 @@ class Main extends React.Component {
                     /*使用自定义tabbar*/
                     return <TabBar tabBarResources={TAB_BAR_RESOURCES}/>
                 }}>
-                <Home style={styles.subView}/>
-                <Home style={styles.subView}/>
-                <Home style={styles.subView}/>
+                <Home style={styles.subView} navigator={this.props.navigator}/>
+                <Home style={styles.subView} navigator={this.props.navigator}/>
+                <Mine style={styles.subView} navigator={this.props.navigator}/>
             </ScrollableTabView>
         );
     }
