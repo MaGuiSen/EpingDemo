@@ -84,37 +84,39 @@ export default class Mine extends React.Component {
                     progressBackgroundColor="#ffff00"
                   />
                 }>
-                <View style={styles.headerLay}>
+                <Image style={{height:200,width:ScreenUtil.SW}} source={require('../../../res/image/bg_vip.png')} >
+                    <View style={styles.headerLay}>
+                            <Image style={styles.avatar}
+                                   source={{uri: 'http://file.1ping.com/Public/app/images/screen/yao_banner.jpg'}}></Image>
+                            <Text>小敏aaa</Text>
+                            <View style={styles.headerTool}>
+                                <Text style={styles.headerToolTxt}
+                                      onPress={this._clickHeaderTool.bind(this,SERVE_DETAIL)}>服务内容</Text>
+                                <Text>|</Text>
+                                <Text style={styles.headerToolTxt} onPress={this._clickAlert.bind(this,HEALTH_PROFILE)}>对话框</Text>
+                                <Text>|</Text>
+                                <Text style={styles.headerToolTxt}
+                                      onPress={this._clickHeaderTool.bind(this,MSG_RECORD)}>我的预告</Text>
+                            </View>
 
-                    <Image style={styles.avatar}
-                           source={{uri: 'http://file.1ping.com/Public/app/images/screen/yao_banner.jpg'}}></Image>
-                    <Text>小敏aaa</Text>
-                    <View style={styles.headerTool}>
-                        <Text style={styles.headerToolTxt}
-                              onPress={this._clickHeaderTool.bind(this,SERVE_DETAIL)}>服务内容</Text>
-                        <Text>|</Text>
-                        <Text style={styles.headerToolTxt} onPress={this._clickAlert.bind(this,HEALTH_PROFILE)}>对话框</Text>
-                        <Text>|</Text>
-                        <Text style={styles.headerToolTxt}
-                              onPress={this._clickHeaderTool.bind(this,MSG_RECORD)}>我的预告</Text>
                     </View>
-                </View>
+                </Image>
                 <View style={[styles.serveLay,,{paddingTop:20}]}>
                     <View style={styles.serveItem}>
                         <Image style={styles.serveImg}
-                               source={{uri: 'http://file.1ping.com/Public/app/images/screen/yao_banner.jpg'}}></Image>
+                               source={require('../../../res/image/icon_serve_baoxian.png')}></Image>
                         <Text style={styles.serveTxt}>图文咨询</Text>
                         <Text style={styles.serveNum}>不限</Text>
                     </View>
                     <View style={styles.serveItem}>
                         <Image style={styles.serveImg}
-                               source={{uri: 'http://file.1ping.com/Public/app/images/screen/yao_banner.jpg'}}></Image>
+                               source={require('../../../res/image/icon_serve_green.png')}></Image>
                         <Text style={styles.serveTxt}>图文咨询</Text>
                         <Text style={styles.serveNum}>不限</Text>
                     </View>
                     <View style={styles.serveItem}>
                         <Image style={styles.serveImg}
-                               source={{uri: 'http://file.1ping.com/Public/app/images/screen/yao_banner.jpg'}}></Image>
+                               source={require('../../../res/image/icon_serve_health.png')}></Image>
                         <Text style={styles.serveTxt}>图文咨询</Text>
                         <Text style={styles.serveNum}>不限</Text>
                     </View>
@@ -122,19 +124,19 @@ export default class Mine extends React.Component {
                 <View style={[styles.serveLay]}>
                     <View style={styles.serveItem}>
                         <Image style={styles.serveImg}
-                               source={{uri: 'http://file.1ping.com/Public/app/images/screen/yao_banner.jpg'}}></Image>
+                               source={require('../../../res/image/icon_serve_img_txt.png')}></Image>
                         <Text style={styles.serveTxt}>图文咨询</Text>
                         <Text style={styles.serveNum}>不限</Text>
                     </View>
                     <View style={styles.serveItem}>
                         <Image style={styles.serveImg}
-                               source={{uri: 'http://file.1ping.com/Public/app/images/screen/yao_banner.jpg'}}></Image>
+                               source={require('../../../res/image/icon_serve_jinghua.png')}></Image>
                         <Text style={styles.serveTxt}>图文咨询</Text>
                         <Text style={styles.serveNum}>不限</Text>
                     </View>
                     <View style={styles.serveItem}>
                         <Image style={styles.serveImg}
-                               source={{uri: 'http://file.1ping.com/Public/app/images/screen/yao_banner.jpg'}}></Image>
+                               source={require('../../../res/image/icon_serve_list.png')}></Image>
                         <Text style={styles.serveTxt}>图文咨询</Text>
                         <Text style={styles.serveNum}>不限</Text>
                     </View>
@@ -142,13 +144,13 @@ export default class Mine extends React.Component {
                 <View style={[styles.serveLay,{paddingBottom:20}]}>
                     <View style={styles.serveItem}>
                         <Image style={styles.serveImg}
-                               source={{uri: 'http://file.1ping.com/Public/app/images/screen/yao_banner.jpg'}}></Image>
+                               source={require('../../../res/image/icon_serve_other.png')}></Image>
                         <Text style={styles.serveTxt}>图文咨询</Text>
                         <Text style={styles.serveNum}></Text>
                     </View>
                     <View style={styles.serveItem}>
                         <Image style={styles.serveImg}
-                               source={{uri: 'http://file.1ping.com/Public/app/images/screen/yao_banner.jpg'}}></Image>
+                               source={require('../../../res/image/icon_serve_phone.png')}></Image>
                         <Text style={styles.serveTxt}>图文咨询</Text>
                         <Text style={styles.serveNum}></Text>
                     </View>
@@ -158,25 +160,25 @@ export default class Mine extends React.Component {
                     <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
                         <View style={styles.serveItem}>
                             <Image style={styles.docImg}
-                                   source={{uri: 'http://file.1ping.com/Public/app/images/screen/yao_banner.jpg'}}></Image>
+                                   source={require('../../../res/image/default_avatar.png')}></Image>
                             <Text style={styles.docTxt}>系主任</Text>
                             <Text style={styles.docValue}>急症科</Text>
                         </View>
                         <View style={styles.serveItem}>
                             <Image style={styles.docImg}
-                                   source={{uri: 'http://file.1ping.com/Public/app/images/screen/yao_banner.jpg'}}></Image>
+                                   source={require('../../../res/image/default_avatar.png')}></Image>
                             <Text style={styles.docTxt}>系主任</Text>
                             <Text style={styles.docValue}>急症科</Text>
                         </View>
                         <View style={styles.serveItem}>
                             <Image style={styles.docImg}
-                                   source={{uri: 'http://file.1ping.com/Public/app/images/screen/yao_banner.jpg'}}></Image>
+                                   source={require('../../../res/image/default_avatar.png')}></Image>
                             <Text style={styles.docTxt}>系主任</Text>
                             <Text style={styles.docValue}>急症科</Text>
                         </View>
                         <View style={styles.serveItem}>
                             <Image style={styles.docImg}
-                                   source={{uri: 'http://file.1ping.com/Public/app/images/screen/yao_banner.jpg'}}></Image>
+                                   source={require('../../../res/image/default_avatar.png')}></Image>
                             <Text style={styles.docTxt}>系主任</Text>
                             <Text style={styles.docValue}>急症科</Text>
                         </View>
@@ -210,7 +212,6 @@ var styles = {
     },
     headerLay: {
         height: 200,
-        backgroundColor: "pink",
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center"

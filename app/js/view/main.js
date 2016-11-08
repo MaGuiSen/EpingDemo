@@ -24,9 +24,9 @@ const styles = StyleSheet.create({
 
 //tabbar图片资源
 const TAB_BAR_RESOURCES = [
-    [require('../../res/image/home.png'), require('../../res/image/home_active.png')],
-    [require('../../res/image/home.png'), require('../../res/image/home_active.png')],
-    [require('../../res/image/home.png'), require('../../res/image/home_active.png')],
+    [require('../../res/image/icon_home_un.png'), require('../../res/image/icon_home_ch.png')],
+    [require('../../res/image/icon_home_un.png'), require('../../res/image/icon_home_ch.png')],
+    [require('../../res/image/icon_home_un.png'), require('../../res/image/icon_home_ch.png')],
 ];
 
 class Main extends React.Component {

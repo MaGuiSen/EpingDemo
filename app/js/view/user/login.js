@@ -21,7 +21,7 @@ var React = require("react"),
 import Toast from '../../util/toast';
 var ScreenUtil = require("../../util/ScreenUtil");
 var ColorUtil = require("../../util/color");
-var LoadingDialog = require("../../componet/LoadingDialog")
+var LoadingDialog = require("../../widget/LoadingDialog")
 export default class Login extends React.Component {
     componentWillMount() {
         if (Platform.OS === 'android') {
